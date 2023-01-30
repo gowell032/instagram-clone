@@ -1,0 +1,40 @@
+.nav {
+    height: 60px;
+    border-bottom: 1px solid #e6e6e6;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.icons-left {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.fa-brands {
+    font-size: 25px;
+    cursor: pointer;
+}
+.rod {
+    font-size: 25px;
+}
+.main-title {
+    font-size: 25px;
+    font-family: 'Lobster', cursive;
+    cursor: pointer;
+}
+.icons-right {
+    display: flex;
+    gap: 30px;
+}
+.explore {
+    width: 25px;
+    cursor: pointer;
+}
+.heart {
+    width: 25px;
+    cursor: pointer;
+}
+.profile {
+    width: 25px;
+    cursor: pointer;
+}
