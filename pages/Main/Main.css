@@ -1,3 +1,7 @@
+body {
+    margin: 0;
+    padding: 0;
+}
 .nav {
     height: 60px;
     border-bottom: 1px solid rgba(0, 0, 0, 0.3);
@@ -22,9 +26,10 @@
     font-family: 'Lobster', cursive;
 }
 .search-bar {
-    border: 1px solid rgba(0, 0, 0, 0.3);
     width: 160px;
     height: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -59,4 +64,120 @@
 .profile {
     width: 25px;
     cursor: pointer;
+}
+.main {
+    background-color: rgb(239, 234, 234);
+    height: 100vh
+}
+.main-feeds {
+    width: 600px;
+    height: 900px;
+    background-color: white;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    position: relative;
+    top: 50px;
+    left: 250px;
+}
+.article-user-bar {
+    display: flex;
+    align-items: center;
+}
+.article-user-bar-profile {
+    margin: 13px;
+    width: 40px;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-radius: 20px;
+}
+.article-id {
+    font-weight: bold;
+}
+.fa-ellipsis {
+    font-size: 20px;
+    position: absolute;
+    right: 20px;
+    cursor: pointer;
+}
+.article-image {
+    width: 600px;
+    height: 600px;
+}
+.article-menu-bar {
+    margin: 10px 15px 5px ;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.fa-heart {
+    color: #ed4955;
+    font-size: 25px;
+    cursor: pointer;
+}
+.fa-comment {
+    font-size: 25px;
+    cursor: pointer;
+}
+.fa-arrow-up-from-bracket {
+    font-size: 22px;
+    cursor: pointer;
+}
+.fa-bookmark {
+    font-size: 22px;
+    position: absolute;
+    right: 20px;
+    cursor: pointer;
+}
+.article-like-bar {
+    margin: 6px;
+    display: flex;
+    align-items: center;
+}
+.article-like-bar-profile {
+    margin: 0px 0px 0px 10px;
+    width: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-radius: 15px;
+}
+.article-like-bar-like-comment {
+    margin: 5px;
+}
+.comment-id {
+    font-weight: bold;
+}
+.comment-like-qt {
+    font-weight: bold;
+}
+.article-des {
+    margin: 10px 11px;
+}
+.article-des-id {
+    margin: 5px;
+    font-weight: bold;
+}
+.article-comment-bar {
+    width: 600px;
+    height: 40px;
+    border-top: 1px solid rgba(0, 0, 0, 0.3);
+    position: absolute;
+    bottom: 0px;
+    display: flex;
+    align-items: center;
+}
+.article-comment {
+    margin: 10px;
+    width: 600px;
+    border-style: none;
+}
+.article-comment:focus {
+    width: 600px;
+    outline: none;
+}
+.article-comment-btn {
+    margin: 5px;
+    font-size: 15px;
+    color: #a6d2fc;
+    border-style: none;
+    background-color: white;
+    position: absolute;
+    right: 0px;
+    cursor: pointer;;
 }
