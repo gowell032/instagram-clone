@@ -213,7 +213,33 @@ body {
     border: 1px solid black;
 }
 .main-right-story-header {
-    margin: 10px;
+    margin: 14px 16px 0px 16px;
     display: flex;
     justify-content: space-between;
+}
+.story-header-story {
+    color: #999999;
+}
+.story-header-more {
+    font-weight: bold;
+    cursor: pointer;
+}
+.story-body-fir {
+    display: flex;
+    align-items: center;
+}
+.story-body-fir-profile {
+    width: 45px;;
+    margin: 15px;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-radius: 30px;
+}
+.story-body-fir-text {
+    width: 50px;
+}
+.story-body-fir-id {
+    font-weight: bold;
+}
+.story-body-fir-time {
+    color: #999999;
 }
