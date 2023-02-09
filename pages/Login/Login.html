@@ -11,15 +11,13 @@
     <div class="container">
         <div class="login-wrap">
         <h1 class="title">Instagram</h1>
-            <form class="form-wrap" action="">
-                <input type="text" id="id" placeholder="  전화번호, 사용자 이름 또는 이메일">
-                <input type="password" id="pw" placeholder="  비밀번호">
-                <button id="loginBtn" onclick="goToMain">로그인</button>
-            </form>
+                <input type="text" id="userId" placeholder="  전화번호, 사용자 이름 또는 이메일">
+                <input type="password" id="userPw" placeholder="  비밀번호">
+                <button id="loginBtn" onclick="checkIdPw()" onchange="changeBtn()">로그인</button>
         <p><a href="#">비밀번호를 잊으셨나요?</a></p>
         </div>
     </div>
-    <script src="Login.js">
-    </script>
+<script src="Login.js">
+</script>
 </body>
 </html>
