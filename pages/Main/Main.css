@@ -1,8 +1,10 @@
 body {
+    width: 100%;
     margin: 0;
     padding: 0;
 }
 .nav {
+    width: 100%;
     height: 60px;
     border-bottom: 1px solid rgba(0, 0, 0, 0.3);
     display: flex;
@@ -70,14 +72,12 @@ body {
     display: flex;
 }
 .main-feeds {
-    width: 600px;
-    height: 900px;
+    float: left;
+    width: 44%;
+    margin: 3% 0% 0% 16%;
     background-color: white;
     border: 1px solid rgba(0, 0, 0, 0.3);
     border-radius: 5px;
-    position: relative;
-    top: 50px;
-    left: 250px;
 }
 .article-user-bar {
     display: flex;
@@ -94,13 +94,10 @@ body {
 }
 .fa-ellipsis {
     font-size: 20px;
-    position: absolute;
-    right: 20px;
     cursor: pointer;
 }
 .article-image {
-    width: 600px;
-    height: 600px;
+    width: 100%;
 }
 .article-menu-bar {
     margin: 10px 15px 5px ;
@@ -123,8 +120,6 @@ body {
 }
 .fa-bookmark {
     font-size: 22px;
-    position: absolute;
-    right: 20px;
     cursor: pointer;
 }
 .article-like-bar {
@@ -154,37 +149,32 @@ body {
     font-weight: bold;
 }
 .article-comment-bar {
-    width: 600px;
     height: 40px;
     border-top: 1px solid rgba(0, 0, 0, 0.3);
-    position: absolute;
-    bottom: 0px;
     display: flex;
     align-items: center;
 }
 .article-comment {
     margin: 10px;
-    width: 600px;
+    width: calc(100% - 40px);
     border-style: none;
 }
 .article-comment:focus {
-    width: 600px;
     outline: none;
 }
 .article-comment-btn {
+    width: 40px;
     margin: 5px;
     font-size: 15px;
     color: #a6d2fc;
     border-style: none;
     background-color: white;
-    position: absolute;
-    right: 0px;
     cursor: pointer;;
 }
 .main-right {
-    position: relative;
-    top: 50px;
-    left: 280px;
+    float: right;
+    width: 19%;
+    margin: 3% 16% 0% 2%;
 }
 .right-fir {
     margin-bottom: 15px;
@@ -210,7 +200,6 @@ body {
     color: #999999;
 }
 .main-right-story {
-    width: 300px;
     margin-bottom: 15px;
     border: 1px solid #999999;
     border-radius: 5px;
@@ -239,8 +228,6 @@ body {
 }
 .story-body-fir-ring {
     width: 53px;
-    position: absolute;
-    left: 13px;
 }
 .story-body-fir-profile {
     width: 45px;
@@ -265,8 +252,6 @@ body {
 }
 .story-body-sec-ring {
     width: 53px;
-    position: absolute;
-    left: 13px;
 }
 .story-body-sec-profile {
     width: 45px;
@@ -291,8 +276,6 @@ body {
 }
 .story-body-tir-ring {
     width: 53px;
-    position: absolute;
-    left: 13px;
 }
 .story-body-tir-profile {
     width: 45px;
@@ -317,8 +300,6 @@ body {
 }
 .story-body-four-ring {
     width: 53px;
-    position: absolute;
-    left: 13px;
 }
 .story-body-four-profile {
     width: 45px;
@@ -377,8 +358,6 @@ body {
     border-style: none;
     background-color: white;
     color: #3898f0;
-    position: absolute;
-    right: 10px;
     cursor: pointer;
 }
 .story-2th-body-sec {
@@ -399,8 +378,6 @@ body {
     border-style: none;
     background-color: white;
     color: #3898f0;
-    position: absolute;
-    right: 10px;
     cursor: pointer;
 }
 .story-2th-body-tir {
@@ -421,8 +398,6 @@ body {
     border-style: none;
     background-color: white;
     color: #3898f0;
-    position: absolute;
-    right: 10px;
     cursor: pointer;
 }
 
@@ -436,8 +411,6 @@ body {
     border-style: none;
     font-size: 10px;
     background-color: white;
-    position: absolute;
-    right: 0px;
     cursor: pointer;
 }
 .fa-trash-can {
@@ -446,4 +419,8 @@ body {
 .itemId {
     font-weight: bold;
     margin: 5px;
+}
+
+@media screen and (min-width: 800px) {
+    
 }

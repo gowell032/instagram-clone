@@ -12,5 +12,5 @@ function validate() {
 
 function checkIdPw() {
     userId.value.includes('@') && userPw.value.length >= 6 ? 
-    window.location.href='http://127.0.0.1:5500/pages/Main/Main.html' : alert('아이디와 비밀번호를 확인해주세요');
+    window.location.href='http://127.0.0.1:5501/pages/Main/Main.html' : alert('아이디와 비밀번호를 확인해주세요');
 };
