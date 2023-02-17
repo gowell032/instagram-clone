@@ -1,8 +1,4 @@
-body {
-    width: 100%;
-    margin: 0;
-    padding: 0;
-}
+@import '../reset.css';
 .nav {
     width: 100%;
     height: 60px;
@@ -141,9 +137,8 @@ body {
 .comment-like-qt {
     font-weight: bold;
 }
-.article-des {
-    margin: 0px;
-}
+/* .article-des {
+} */
 .article-des-id {
     margin: 5px;
     font-weight: bold;
@@ -224,10 +219,15 @@ body {
 }
 .story-body-fir {
     display: flex;
-    align-items: center;
 }
 .story-body-fir-ring {
     width: 53px;
+}
+.story-body-fir-wrap {
+    display: flex;
+    align-items: center;
+    position: relative;
+    right: 50px;
 }
 .story-body-fir-profile {
     width: 45px;
@@ -248,10 +248,15 @@ body {
 }
 .story-body-sec {
     display: flex;
-    align-items: center;
 }
 .story-body-sec-ring {
     width: 53px;
+}
+.story-body-sec-wrap {
+    display: flex;
+    align-items: center;
+    position: relative;
+    right: 50px;
 }
 .story-body-sec-profile {
     width: 45px;
@@ -272,10 +277,15 @@ body {
 }
 .story-body-tir {
     display: flex;
-    align-items: center;
 }
 .story-body-tir-ring {
     width: 53px;
+}
+.story-body-tir-wrap {
+    display: flex;
+    align-items: center;
+    position: relative;
+    right: 50px;
 }
 .story-body-tir-profile {
     width: 45px;
@@ -296,10 +306,15 @@ body {
 }
 .story-body-four {
     display: flex;
-    align-items: center;
 }
 .story-body-four-ring {
     width: 53px;
+}
+.story-body-four-wrap {
+    display: flex;
+    align-items: center;
+    position: relative;
+    right: 50px;
 }
 .story-body-four-profile {
     width: 45px;
