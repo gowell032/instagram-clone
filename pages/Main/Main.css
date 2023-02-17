@@ -64,14 +64,15 @@
     cursor: pointer;
 }
 .main {
-    background-color: white ;
+    margin-top: 40px;
+    background-color: transparent ;
     display: flex;
+    justify-content: center;
+    gap: 30px;
 }
 .main-feeds {
-    float: left;
     width: 44%;
-    margin: 3% 0% 0% 16%;
-    background-color: white;
+    background-color: transparent;
     border: 1px solid rgba(0, 0, 0, 0.3);
     border-radius: 5px;
 }
@@ -167,9 +168,7 @@
     cursor: pointer;;
 }
 .main-right {
-    float: right;
     width: 19%;
-    margin: 3% 16% 0% 2%;
 }
 .right-fir {
     margin-bottom: 15px;
@@ -436,6 +435,27 @@
     margin: 5px;
 }
 
-@media screen and (min-width: 800px) {
-    
+/* Login */
+
+@media screen and (max-width: 480px) {
+    .search-bar {
+        display: none;
+    }
+    .main-title {
+        display: none;
+    }
+    .rod {
+        display: none;
+    }
+}
+
+/* Main */
+
+@media screen and (max-width: 1200px) {
+    .main-right {
+        display: none;
+    }
+    .main-feeds {
+        width: 50%
+    }
 }
