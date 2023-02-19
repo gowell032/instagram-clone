@@ -1,4 +1,7 @@
 @import '../reset.css';
+html {
+    background-color: beige
+}
 .nav {
     width: 100%;
     height: 60px;
@@ -6,6 +9,7 @@
     display: flex;
     align-items: center;
     justify-content: space-around;
+    background-color: white;
 }
 .icons-left {
     display: flex;
@@ -33,6 +37,7 @@
     align-items: center;
     z-index: 1;
     opacity: 1;
+    background-color: white;
 }
 .search-input {
     width: 50px;
@@ -75,49 +80,55 @@
     background-color: transparent;
     border: 1px solid rgba(0, 0, 0, 0.3);
     border-radius: 5px;
+    background-color: white;
+    position: relative;
 }
 .article-user-bar {
+    padding: 2px;
     display: flex;
     align-items: center;
 }
 .article-user-bar-profile {
-    margin: 13px;
-    width: 40px;
+    margin: 5px 10px 5px 5px;
+    width: 35px;
     border: 1px solid rgba(0, 0, 0, 0.3);
     border-radius: 20px;
 }
 .article-id {
     font-weight: bold;
 }
-.fa-ellipsis {
-    font-size: 20px;
+.eclipse {
+    position: absolute;
+    right: 10px;
     cursor: pointer;
+    font-size:30px
 }
 .article-image {
     width: 100%;
 }
 .article-menu-bar {
-    margin: 10px 15px 5px ;
+    margin: 5px 10px 5px 10px;
     display: flex;
     align-items: center;
     gap: 15px;
 }
-.fa-heart {
+.favorite {
     color: #ed4955;
+    cursor: pointer;
+}
+.mail {
     font-size: 25px;
     cursor: pointer;
 }
-.fa-comment {
-    font-size: 25px;
-    cursor: pointer;
-}
-.fa-arrow-up-from-bracket {
+.download {
     font-size: 22px;
     cursor: pointer;
 }
-.fa-bookmark {
+.bookmark {
     font-size: 22px;
     cursor: pointer;
+    position: absolute;
+    right: 10px;
 }
 .article-like-bar {
     margin: 5px;
@@ -145,7 +156,6 @@
     font-weight: bold;
 }
 .article-comment-bar {
-    height: 40px;
     border-top: 1px solid rgba(0, 0, 0, 0.3);
     display: flex;
     align-items: center;
@@ -197,6 +207,7 @@
     margin-bottom: 15px;
     border: 1px solid #999999;
     border-radius: 5px;
+    background-color: white;
 }
 .main-right-story-header {
     margin: 14px 16px 0px 16px;
@@ -335,6 +346,7 @@
 .main-right-story-2th {
     border: 1px solid #999999;
     border-radius: 5px;
+    background-color: white;
 }
 .main-right-story-2th-header {
     margin: 14px 16px 0px 16px;
@@ -415,12 +427,10 @@
     cursor: pointer;
 }
 
-/* JS */
-
-.items {
-    list-style: none;
-    padding: 0px;
+.article-des {
+    margin-bottom: 5px;
 }
+/* JS */
 .itemDel {
     border-style: none;
     font-size: 10px;
@@ -435,11 +445,14 @@
     margin: 5px;
 }
 
-/* Login */
+/* Main */
 
-@media screen and (max-width: 480px) {
-    .search-bar {
-        display: none;
+@media screen and (max-width: 1120px) {
+    .main-right {
+        display: none
+    }
+    .main-feeds {
+        width: 60%
     }
     .main-title {
         display: none;
@@ -447,15 +460,7 @@
     .rod {
         display: none;
     }
-}
-
-/* Main */
-
-@media screen and (max-width: 1200px) {
-    .main-right {
+    .search-bar {
         display: none;
-    }
-    .main-feeds {
-        width: 50%
     }
 }
